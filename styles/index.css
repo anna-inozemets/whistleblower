@@ -214,6 +214,15 @@ h1, h2, h3, h4, h5, h6 {
   content: url("../images/arrow.svg");
   right: 36px;
 }
+
+.header--white {
+  background-color: #fff;
+  color: #000000;
+}
+
+.header__nav-list-link--white {
+  color: #000000;
+}
 /*#endregion header*/
 
 /*#region greeting*/
@@ -890,6 +899,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 /*#endregion extraLargeScreen*/
 
+/*#region fraudPage*/
+.main-cases {
+  margin-top: 60px;
+  margin-bottom: 85px;
+}
+
+.fraud-cases {
+  margin-bottom: 130px;
+}
+/*#endregion fraudPage*/
+
+
+
+
+
+
+
+
+
 /*#region tablet*/
 @media screen and (min-width: 905px) and (max-width: 1439px) {
   /*#region header*/
@@ -1039,6 +1067,15 @@ h1, h2, h3, h4, h5, h6 {
 
   .yellow-link.yellow-link--small::after {
     content: '';
+  }
+
+  .burger-menu__button-span--white {
+    background-color: var(--medium-blue);
+  }
+
+  .burger-menu__button-span--white::before,
+  .burger-menu__button-span--white::after {
+    background-color: var(--medium-blue);
   }
   /*#endregion header*/
 
@@ -1376,6 +1413,17 @@ h1, h2, h3, h4, h5, h6 {
     max-width: max-content;
   }
   /*#endregion footer*/
+
+  /*#region fraudPage*/
+    .main-cases {
+      margin-top: 40px;
+      margin-bottom: 65px;
+    }
+
+    .fraud-cases {
+      margin-bottom: 105px;
+    }
+  /*#endregion fraudPage*/
 }
 /*#endregion tablet*/
 
@@ -1528,6 +1576,15 @@ h1, h2, h3, h4, h5, h6 {
 
   .yellow-link.yellow-link--small::after {
     content: '';
+  }
+
+  .burger-menu__button-span--white {
+    background-color: var(--medium-blue);
+  }
+
+  .burger-menu__button-span--white::before,
+  .burger-menu__button-span--white::after {
+    background-color: var(--medium-blue);
   }
   /*#endregion header*/
 
@@ -1886,6 +1943,18 @@ h1, h2, h3, h4, h5, h6 {
     max-width: max-content;
   }
   /*#endregion footer*/
+
+  /*#region fraudPage*/
+    .main-cases {
+      margin-top: 10px;
+      margin-bottom: 55px;
+    }
+
+    .fraud-cases {
+      margin-bottom: 75px;
+    }
+  /*#endregion fraudPage*/
+
 }
 /*#endregion phone*/
 
@@ -2045,6 +2114,15 @@ h1, h2, h3, h4, h5, h6 {
 
   .yellow-link.yellow-link--small::after {
     content: '';
+  }
+
+  .burger-menu__button-span--white {
+    background-color: var(--medium-blue);
+  }
+
+  .burger-menu__button-span--white::before,
+  .burger-menu__button-span--white::after {
+    background-color: var(--medium-blue);
   }
   /*#endregion header*/
 
@@ -2462,5 +2540,17 @@ h1, h2, h3, h4, h5, h6 {
     max-width: max-content;
   }
   /*#endregion footer*/
+
+  /*#region fraudPage*/
+    .main-cases {
+      margin-top: 10px;
+      margin-bottom: 45px;
+    }
+
+    .fraud-cases {
+      margin-bottom: 65px;
+    }
+  /*#endregion fraudPage*/
+
 }
 /*#endregion smallscreens*/
