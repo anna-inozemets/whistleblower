@@ -916,6 +916,119 @@ h1, h2, h3, h4, h5, h6 {
 }
 /*#endregion aboutPage*/
 
+/*#region healthcareFraud*/
+.mission__title--healthcare {
+  text-align: left;
+}
+
+.who {
+  padding: 90px 175px 115px;
+  text-align: center;
+}
+
+.who__title {
+  margin: 0 auto 12px;
+  max-width: 850px;
+  font-size: 49px;
+  line-height: 64px;
+  font-feature-settings: 'calt' off;
+}
+
+.who__text {
+  margin: 0 auto 60px;
+  max-width: 840px;
+  color: #173756;
+}
+
+.who__text:nth-child(2) {
+  max-width: 950px;
+  margin-bottom: 95px;
+}
+
+.who__cards {
+  margin: 0 auto 70px;
+  width: max-content;
+  display: grid;
+  grid-template-columns: repeat(4, 195px);
+  column-gap: 90px;
+  row-gap: 50px;
+}
+
+.who__card-img-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 152px;
+  width: 152px;
+  margin: 0 auto 16px;
+  background-color: var(--yellow);
+}
+
+.who__card-img {
+  height: 81px;
+}
+
+.who__card-title {
+  text-align: center;
+  font-feature-settings: 'ss04' on, 'ss03' on, 'ss02' on;
+  color: #000000;
+}
+
+.who__paragraph {
+  margin: 0 auto 24px;
+  text-align: left;
+  max-width: 1010px;
+}
+
+.who__paragraph:last-child {
+  margin-bottom: 0;
+}
+
+.who__paragraph-title {
+  margin-bottom: 10px;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.who__paragraph-text {
+  color: #173756;
+}
+
+.expose {
+  background-color: var(--transparent-blue);
+}
+
+.who__paragraph--expose {
+  padding: 86px 0 70px;
+}
+
+.together {
+  background-color: #fff;
+}
+
+.who__paragraph-text--together {
+  margin-bottom: 16px;
+}
+
+.who__paragraph-text--together:last-child {
+  margin-bottom: 0;
+}
+
+.who__paragraph-title--together {
+  margin-bottom: 23px;
+}
+
+.who__paragraph-text-link {
+  color: #173751;
+}
+
+
+/*#endregion healthcareFraud*/
+
+
+
+
+
 /*#region extraLargeScreen*/
 @media screen and (min-width: 1500px) {
   .header__nav {
@@ -952,6 +1065,23 @@ h1, h2, h3, h4, h5, h6 {
 
   .about__paragraph {
     padding: 85px 0 75px;
+  }
+
+  .who {
+    padding: 90px 0 115px;
+  }
+
+  .who__title {
+    margin: 0 auto 16px;
+    max-width: 75%;
+  }
+
+  .who__text {
+    max-width: 70%;
+  }
+
+  .who__paragraph--expose {
+    padding: 86px 0 70px;
   }
 }
 /*#endregion extraLargeScreen*/
@@ -1502,6 +1632,50 @@ h1, h2, h3, h4, h5, h6 {
       margin-bottom: 80px;
     }
   /*#endregion aboutPage*/
+
+  /*#region healthcarePage*/
+  .healthcare__greeting {
+    text-align: center;
+  }
+
+  .mission__title--healthcare {
+    text-align: center;
+  }
+
+  .who {
+    padding: 69px 48px 70px;
+  }
+  
+  .who__title {
+    margin-bottom: 35px;
+    font-size: 32px;
+    line-height: 46px;
+    max-width: 750px;
+  }
+
+  .who__text {
+    margin: 0 auto 75px;
+    max-width: 755px;
+  }
+  
+  .who__text:nth-child(2) {
+    max-width: 795px;
+    margin-bottom: 85px;
+  }
+  
+  .who__cards {
+    grid-template-columns: repeat(3, 195px);
+    row-gap: 60px;
+  }
+
+  .who__paragraph {
+    max-width: 750px;
+  }
+
+  .who__paragraph--expose {
+    padding: 65px 0 85px;
+  }
+  /*#endregion healthcarePage*/
 
 }
 /*#endregion tablet*/
@@ -2071,6 +2245,52 @@ h1, h2, h3, h4, h5, h6 {
     }
 
   /*#endregion aboutPage*/
+
+  /*#region healthcarePage*/
+  .healthcare__greeting {
+    text-align: center;
+  }
+
+  .mission__title--healthcare {
+    text-align: center;
+  }
+
+  .who {
+    padding: 60px 28px 80px;
+  }
+  
+  .who__title {
+    margin: 0 auto 24px;
+    font-size: 32px;
+    line-height: 37px;
+    max-width: 495px;
+  }
+  
+  .who__text {
+    margin: 0 auto 90px;
+    max-width: max-content;
+  }
+  
+  .who__text:nth-child(2) {
+    max-width: max-content;
+    margin-bottom: 50px;
+  }
+  
+  .who__cards {
+    margin: 0 auto 70px;
+    grid-template-columns: repeat(2, 195px);
+    column-gap: 90px;
+    row-gap: 60px;
+  }
+
+  .who__paragraph {
+    max-width: max-content;
+  }
+
+  .who__paragraph--expose {
+    padding: 50px 28px 60px;
+  }
+  /*#endregion healthcarePage*/
 
 }
 /*#endregion phone*/
@@ -2706,5 +2926,57 @@ h1, h2, h3, h4, h5, h6 {
       margin-bottom: 45px;
     }
   /*#endregion aboutPage*/
+
+  /*#region healthcarePage*/
+  .healthcare__greeting {
+    text-align: center;
+  }
+
+  .mission__title--healthcare {
+    text-align: center;
+  }
+
+  .who {
+    padding: 32px 16px 45px;
+  }
+  
+  .who__title {
+    margin: 0 auto 16px;
+    font-size: 28px;
+    line-height: 33px;
+    max-width: max-content;
+  }
+  
+  .who__text {
+    margin: 0 auto 40px;
+    max-width: max-content;
+  }
+  
+  .who__text:nth-child(2) {
+    max-width: max-content;
+    margin-bottom: 32px;
+  }
+  
+  .who__cards {
+    margin: 0 auto 40px;
+    grid-template-columns: repeat(1, 195px);
+    row-gap: 40px;
+  }
+
+  .who__paragraph-title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .who__paragraph-text {
+    font-size: 12px
+  }
+
+  .who__paragraph--expose {
+    padding: 32px 16px 40px;
+  }
+
+  /*#endregion healthcarePage*/
+
 }
 /*#endregion smallscreens*/
