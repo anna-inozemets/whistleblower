@@ -1070,6 +1070,34 @@ h1, h2, h3, h4, h5, h6 {
 }
 /*#endregion pharmaseutical*/
 
+/*#region defense*/
+.defense__greeting-img {
+  height: 425px;
+}
+
+.defense__description {
+  text-align: center;
+  padding: 105px 205px 105px;
+}
+
+.defense__description--without-top-padding {
+  text-align: left;
+  padding-top: 0;
+}
+
+.defense__description-content {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.defense__description-paragraph {
+  max-width: 490px;
+}
+/*#endregion defense*/
+
+
 
 
 
@@ -1733,6 +1761,28 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
   }
   /*#endregion pharmaseutical*/
+
+  /*#region defense*/
+  .defense__greeting-img {
+    height: 460px;
+    margin-bottom: 50px;
+  }
+  
+  .defense__description {
+    text-align: left;
+    padding: 95px 65px 75px;
+  }
+
+  .defense__description-content {
+    flex-direction: column;
+  }
+  
+  .defense__description-paragraph {
+    margin-top: 68px;
+    max-width: max-content;
+  }
+  /*#endregion defense*/
+
 }
 /*#endregion tablet*/
 
@@ -2355,6 +2405,27 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
   }
   /*#endregion pharmaseutical*/
+
+  /*#region defense*/
+  .defense__greeting-img {
+    height: 350px;
+    margin-bottom: 50px;
+  }
+  
+  .defense__description {
+    text-align: left;
+    padding: 50px 35px 35px;
+  }
+
+  .defense__description-content {
+    flex-direction: column;
+  }
+  
+  .defense__description-paragraph {
+    margin-top: 56px;
+    max-width: max-content;
+  }
+  /*#endregion defense*/
 }
 /*#endregion phone*/
 
@@ -3048,5 +3119,30 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
   }
   /*#endregion pharmaseutical*/
+
+  /*#region defense*/
+  .defense__greeting-img {
+    height: 230px;
+    margin-bottom: 32px;
+  }
+  
+  .defense__description {
+    text-align: left;
+    padding: 32px 16px 45px;
+  }
+
+  .defense__description-content {
+    flex-direction: column;
+  }
+
+  .defense__description-content-img {
+    width: 320px;
+  }
+  
+  .defense__description-paragraph {
+    margin-top: 32px;
+    max-width: max-content;
+  }
+  /*#endregion defense*/
 }
 /*#endregion smallscreens*/
