@@ -1025,6 +1025,25 @@ h1, h2, h3, h4, h5, h6 {
 
 /*#endregion healthcareFraud*/
 
+/*#region nursing*/
+.nursing__description-text {
+  text-align: center;
+}
+
+.nursing__forms-list {
+  margin-bottom: 16px;
+}
+
+.nursing__forms-list-item {
+  position: relative;
+  padding-left: 7px;
+}
+
+.nursing__forms-list-item::before {
+  content: "•";
+  margin-right: 5px;
+}
+/*#endregion nursing*/
 
 
 
