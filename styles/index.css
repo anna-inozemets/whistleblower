@@ -1045,6 +1045,32 @@ h1, h2, h3, h4, h5, h6 {
 }
 /*#endregion nursing*/
 
+/*#region pharmaseutical*/
+.pharm__description-paragraph {
+  text-align: center;
+}
+
+.pharm__description-text {
+  margin-bottom: 30px;
+}
+
+.pharm__services {
+  background-color: var(--transparent-blue);
+}
+
+.who__paragraph--pharm {
+  margin: 0 auto 36px;
+}
+
+.pharm__group {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 100px 180px 95px;
+}
+/*#endregion pharmaseutical*/
+
+
 
 
 
@@ -1101,6 +1127,10 @@ h1, h2, h3, h4, h5, h6 {
 
   .who__paragraph--expose {
     padding: 86px 0 70px;
+  }
+
+  .pharm__group {
+    padding: 100px 0 95px;
   }
 }
 /*#endregion extraLargeScreen*/
@@ -1696,6 +1726,13 @@ h1, h2, h3, h4, h5, h6 {
   }
   /*#endregion healthcarePage*/
 
+  /*#region pharmaseutical*/
+  .pharm__group {
+    padding: 64px 80px 70px;
+    flex-direction: column;
+    align-items: center;
+  }
+  /*#endregion pharmaseutical*/
 }
 /*#endregion tablet*/
 
@@ -2311,6 +2348,13 @@ h1, h2, h3, h4, h5, h6 {
   }
   /*#endregion healthcarePage*/
 
+  /*#region pharmaseutical*/
+  .pharm__group {
+    padding: 50px 45px 95px;
+    flex-direction: column;
+    align-items: center;
+  }
+  /*#endregion pharmaseutical*/
 }
 /*#endregion phone*/
 
@@ -2997,5 +3041,12 @@ h1, h2, h3, h4, h5, h6 {
 
   /*#endregion healthcarePage*/
 
+  /*#region pharmaseutical*/
+  .pharm__group {
+    padding: 32px 16px 45px;
+    flex-direction: column;
+    align-items: center;
+  }
+  /*#endregion pharmaseutical*/
 }
 /*#endregion smallscreens*/
