@@ -1097,6 +1097,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 /*#endregion defense*/
 
+/*#region tariff*/
+.tariff__greeting-img {
+  height: 530px;
+}
+/*#endregion tariff*/
+
+
 
 
 
@@ -1783,6 +1790,11 @@ h1, h2, h3, h4, h5, h6 {
   }
   /*#endregion defense*/
 
+  /*#region tariff*/
+  .tariff__greeting-img {
+    height: 530px;
+  }
+  /*#endregion tariff*/
 }
 /*#endregion tablet*/
 
@@ -2426,6 +2438,14 @@ h1, h2, h3, h4, h5, h6 {
     max-width: max-content;
   }
   /*#endregion defense*/
+
+  /*#region tariff*/
+  .tariff__greeting-img {
+    height: 395px;
+  }
+  /*#endregion tariff*/
+
+
 }
 /*#endregion phone*/
 
@@ -3144,5 +3164,12 @@ h1, h2, h3, h4, h5, h6 {
     max-width: max-content;
   }
   /*#endregion defense*/
+
+  /*#region tariff*/
+  .tariff__greeting-img {
+    max-height: 245px;
+  }
+  /*#endregion tariff*/
+
 }
 /*#endregion smallscreens*/
