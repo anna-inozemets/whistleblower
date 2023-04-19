@@ -114,6 +114,13 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   color: var(--dark-blue);
 }
+
+@media screen and (min-width: 360px) and (max-width: 583px) {
+  body {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
 /*#endregion generalStyles*/
 
 /*#region pageWrapper*/
@@ -391,8 +398,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .cases > div div p {
-  font-size: 16px;
-  line-height: 24px;
   font-feature-settings: 'ss04' on, 'ss03' on, 'ss02' on;
 }
 
@@ -892,7 +897,15 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--transparent-blue);
 }
 
-.about__greeting-img {
+.about--page {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 75px 100px 90px;
+  color: #173756;
+}
+
+.about--page img {
   margin-top: 20px;
 }
 
@@ -900,23 +913,40 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 575px;
 }
 
-.about--about-page {
-  padding: 40px 75px 100px 90px;
+.about__greeting-description h2 {
+  font-size: 49px;
+  line-height: 64px;
+  margin-bottom: 20px;
 }
 
-.about__text--about-page {
-  color: #173756;
+.about__greeting-description p {
+  margin-bottom: 25px;
 }
 
-.about__text--about-page:last-child {
+.about__greeting-description p:last-child {
   margin-bottom: 0;
 }
 
 .about__paragraph {
+  text-align: center;
   padding: 85px 180px 75px;
 }
 
-.mission__text-link {
+.about__paragraph h2 {
+  font-size: 49px;
+  line-height: 64px;
+  margin-bottom: 20px;
+}
+
+.about__paragraph p {
+  margin-bottom: 20px;
+}
+
+.about__paragraph p:last-child {
+  margin-bottom: 0;
+}
+
+.about__paragraph p > a {
   color: var(--light-blue);
 }
 
@@ -1139,8 +1169,8 @@ h1, h2, h3, h4, h5, h6 {
     padding: 135px 0 175px 0;
   }
 
-  .about {
-    padding: 135px 0 175px 0;
+  .about--page {
+    padding: 45px 0 115px 0;
   }
 
   .process {
@@ -1699,43 +1729,47 @@ h1, h2, h3, h4, h5, h6 {
   /*#endregion fraudPage*/
 
   /*#region aboutPage*/
-    .about__greeting-description {
-      max-width: max-content;
-    }
-
-    .about__greeting-img {
-      height: 640px;
-      margin-bottom: 30px;
-    }
-    
-    .about--about-page {
-      padding: 5px 48px 75px;
-    }
-    
-    .about__text--about-page {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    .about__title--about-page {
-      text-align: center;
-    }
-
-    .about__paragraph {
-      padding: 85px 48px 60px;
-    }
-
-    .about__paragraph-title {
-      margin-bottom: 60px;
-    }
-
-    .cases__cards--about-page {
-      row-gap: 44px;
-    }
-
-    .cases__cards--about-page {
-      margin-bottom: 80px;
-    }
+  .about--page {
+    flex-direction: column-reverse;
+    padding: 20px 48px 75px;
+    text-align: center;
+  }
+  
+  .about--page img {
+    height: 640px;
+    margin-bottom: 30px;
+  }
+  
+  .about__greeting-description {
+    max-width: max-content;
+  }
+  
+  .about__greeting-description h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+  }
+  
+  .about__greeting-description p {
+    margin-bottom: 15px;
+  }
+  
+  .about__paragraph {
+    padding: 85px 48px 60px;
+  }
+  
+  .about__paragraph h2 {
+    font-size: 42px;
+    margin-bottom: 60px;
+  }
+  
+  .about__paragraph p {
+    margin-bottom: 15px;
+  }
+  
+  .cases__cards--about-page {
+    row-gap: 44px;
+    margin-bottom: 80px;
+  }
   /*#endregion aboutPage*/
 
   /*#region healthcarePage*/
@@ -1852,12 +1886,12 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
   }
 
-  .header__action-link {
+  .header__action-wrapper a {
     padding: 3px 0;
     margin-right: 0;
   }
 
-  .header__action-button {
+  .header__action-wrapper button {
     display: none;
   }
 
@@ -2364,41 +2398,46 @@ h1, h2, h3, h4, h5, h6 {
   /*#endregion fraudPage*/
 
   /*#region aboutPage*/
-    .about__greeting-description {
-      max-width: max-content;
-    }
+  .about--page {
+    flex-direction: column-reverse;
+    padding: 25px 28px 52px;
+    text-align: center;
+  }
+  
+  .about--page img {
+    height: 495px;
+    margin-bottom: 20px;
+  }
+  
+  .about__greeting-description {
+    max-width: max-content;
+  }
+  
+  .about__greeting-description h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .about__greeting-description p {
+    margin-bottom: 10px;
+  }
+  
+  .about__paragraph {
+    padding: 35px 28px 50px;
+  }
+  
+  .about__paragraph h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .about__paragraph p {
+    margin-bottom: 15px;
+  }
 
-    .about__greeting-img {
-      height: 495px;
-      margin-bottom: 65px;
-    }
-    
-    .about--about-page {
-      padding: 25px 28px 52px;
-    }
-    
-    .about__text--about-page {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    .about__title--about-page {
-      margin-bottom: 32px;
-      text-align: center;
-    }
-
-    .about__paragraph {
-      padding: 35px 28px 50px;
-    }
-
-    .about__paragraph-title {
-      margin-bottom: 10px;
-    }
-
-    .cases__cards--about-page {
-      margin-bottom: 70px;
-    }
-
+  .cases > .cases__cards--about-page {
+    margin-bottom: 70px;
+  }
   /*#endregion aboutPage*/
 
   /*#region healthcarePage*/
@@ -2514,14 +2553,14 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
   }
 
-  .header__action-link {
+  .header__action-wrapper a {
     padding: 3px 0;
     margin-right: 0;
     font-size: 16px;
     line-height: 20px;
   }
 
-  .header__action-button {
+  .header__action-wrapper button {
     display: none;
   }
 
@@ -3096,41 +3135,48 @@ h1, h2, h3, h4, h5, h6 {
   /*#endregion fraudPage*/
 
   /*#region aboutPage*/
-    .about__greeting-description {
-      max-width: max-content;
-    }
+  .about--page {
+    flex-direction: column-reverse;
+    padding: 10px 16px 45px;
+    text-align: center;
+  }
+  
+  .about--page img {
+    height: 320px;
+    margin-bottom: 16px;
+  }
+  
+  .about__greeting-description {
+    max-width: max-content;
+  }
+  
+  .about__greeting-description h2 {
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 15px;
+  }
+  
+  .about__greeting-description p {
+    margin-bottom: 10px;
+  }
+  
+  .about__paragraph {
+    padding: 32px 16px 45px;
+  }
+  
+  .about__paragraph h2 {
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 15px;
+  }
+  
+  .about__paragraph p {
+    margin-bottom: 10px;
+  }
 
-    .about__greeting-img {
-      height: 320px;
-      margin-bottom: 16px;
-    }
-    
-    .about--about-page {
-      padding: 5px 16px 45px;
-    }
-    
-    .about__text--about-page {
-      text-align: center;
-      margin-bottom: 8px;
-    }
-
-    .about__title--about-page {
-      margin-bottom: 16px;
-      text-align: center;
-    }
-
-    .about__paragraph {
-      padding: 32px 16px 45px;
-    }
-
-    .about__paragraph-title {
-      line-height: 40px;
-      margin-bottom: 10px;
-    }
-
-    .cases__cards--about-page {
-      margin-bottom: 45px;
-    }
+  .cases > .cases__cards--about-page {
+    margin-bottom: 45px;
+  }
   /*#endregion aboutPage*/
 
   /*#region healthcarePage*/
