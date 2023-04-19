@@ -1852,12 +1852,12 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
   }
 
-  .header__action-link {
+  .header__action-wrapper a {
     padding: 3px 0;
     margin-right: 0;
   }
 
-  .header__action-button {
+  .header__action-wrapper button {
     display: none;
   }
 
@@ -2514,14 +2514,14 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
   }
 
-  .header__action-link {
+  .header__action-wrapper a {
     padding: 3px 0;
     margin-right: 0;
     font-size: 16px;
     line-height: 20px;
   }
 
-  .header__action-button {
+  .header__action-wrapper button {
     display: none;
   }
 
