@@ -956,16 +956,13 @@ h1, h2, h3, h4, h5, h6 {
 /*#endregion aboutPage*/
 
 /*#region healthcareFraud*/
-.mission__title--healthcare {
-  text-align: left;
-}
-
 .who {
   padding: 90px 175px 115px;
   text-align: center;
+  color: #173756;
 }
 
-.who__title {
+.who h2 {
   margin: 0 auto 12px;
   max-width: 850px;
   font-size: 49px;
@@ -973,13 +970,12 @@ h1, h2, h3, h4, h5, h6 {
   font-feature-settings: 'calt' off;
 }
 
-.who__text {
+.who > p {
   margin: 0 auto 60px;
   max-width: 840px;
-  color: #173756;
 }
 
-.who__text:nth-child(2) {
+.who > p:nth-child(2) {
   max-width: 950px;
   margin-bottom: 95px;
 }
@@ -993,7 +989,7 @@ h1, h2, h3, h4, h5, h6 {
   row-gap: 50px;
 }
 
-.who__card-img-wrapper {
+.who__card div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1003,11 +999,11 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--yellow);
 }
 
-.who__card-img {
+.who__card img {
   height: 81px;
 }
 
-.who__card-title {
+.who__card p {
   text-align: center;
   font-feature-settings: 'ss04' on, 'ss03' on, 'ss02' on;
   color: #000000;
@@ -1023,13 +1019,13 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
 }
 
-.who__paragraph-title {
+.who__paragraph h3 {
   margin-bottom: 10px;
   font-size: 32px;
   line-height: 40px;
 }
 
-.who__paragraph-text {
+.who__paragraph p {
   color: #173756;
 }
 
@@ -1038,30 +1034,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .who__paragraph--expose {
-  padding: 86px 0 70px;
+  padding: 70px 0 86px;
 }
 
-.together {
-  background-color: #fff;
+.who__paragraph--expose h3 {
+  margin-bottom: 24px;
 }
 
-.who__paragraph-text--together {
+.who__paragraph--expose p {
   margin-bottom: 16px;
 }
 
-.who__paragraph-text--together:last-child {
+.who__paragraph--expose p:last-child {
   margin-bottom: 0;
 }
 
-.who__paragraph-title--together {
-  margin-bottom: 23px;
-}
-
-.who__paragraph-text-link {
+.who__paragraph--expose p > a {
   color: #173751;
 }
-
-
 /*#endregion healthcareFraud*/
 
 /*#region nursing*/
@@ -1189,7 +1179,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 56px 0;
   }
 
-  .about--about-page {
+  .about--page {
     padding: 40px 0 100px;
   }
 
@@ -1201,21 +1191,21 @@ h1, h2, h3, h4, h5, h6 {
     padding: 90px 0 115px;
   }
 
-  .who__title {
+  .who h2 {
     margin: 0 auto 16px;
     max-width: 75%;
   }
 
-  .who__text {
+  .who > p {
     max-width: 70%;
   }
 
   .who__paragraph--expose {
-    padding: 86px 0 70px;
+    padding: 70px 0 86px;
   }
 
   .pharm__group {
-    padding: 100px 0 95px;
+    padding: 95px 0 105px;
   }
 }
 /*#endregion extraLargeScreen*/
@@ -1773,46 +1763,47 @@ h1, h2, h3, h4, h5, h6 {
   /*#endregion aboutPage*/
 
   /*#region healthcarePage*/
-  .healthcare__greeting {
-    text-align: center;
-  }
-
-  .mission__title--healthcare {
-    text-align: center;
-  }
-
   .who {
-    padding: 69px 48px 70px;
+    padding: 60px 48px 70px;
   }
   
-  .who__title {
+  .who h2 {
     margin-bottom: 35px;
     font-size: 32px;
     line-height: 46px;
-    max-width: 750px;
-  }
-
-  .who__text {
-    margin: 0 auto 75px;
-    max-width: 755px;
+    max-width: 90%;
   }
   
-  .who__text:nth-child(2) {
-    max-width: 795px;
+  .who > p {
+    margin: 0 auto 75px;
+    max-width: 90%;
+  }
+  
+  .who > p:nth-child(2) {
+    max-width: 90%;
     margin-bottom: 85px;
   }
   
   .who__cards {
     grid-template-columns: repeat(3, 195px);
-    row-gap: 60px;
   }
-
+  
   .who__paragraph {
-    max-width: 750px;
+    max-width: 100%;
   }
-
+  
+  .who__paragraph:last-child {
+    margin-bottom: 0;
+  }
+  
+  .who__paragraph h3 {
+    margin-bottom: 10px;
+    font-size: 32px;
+    line-height: 40px;
+  }
+  
   .who__paragraph--expose {
-    padding: 65px 0 85px;
+    padding: 65px 48px 85px;
   }
   /*#endregion healthcarePage*/
 
@@ -2441,31 +2432,22 @@ h1, h2, h3, h4, h5, h6 {
   /*#endregion aboutPage*/
 
   /*#region healthcarePage*/
-  .healthcare__greeting {
-    text-align: center;
-  }
-
-  .mission__title--healthcare {
-    text-align: center;
-  }
-
   .who {
     padding: 60px 28px 80px;
   }
   
-  .who__title {
+  .who h2 {
     margin: 0 auto 24px;
     font-size: 32px;
     line-height: 37px;
-    max-width: 495px;
   }
   
-  .who__text {
+  .who > p {
     margin: 0 auto 90px;
     max-width: max-content;
   }
   
-  .who__text:nth-child(2) {
+  .who > p:nth-child(2) {
     max-width: max-content;
     margin-bottom: 50px;
   }
@@ -2476,9 +2458,19 @@ h1, h2, h3, h4, h5, h6 {
     column-gap: 90px;
     row-gap: 60px;
   }
-
+  
   .who__paragraph {
-    max-width: max-content;
+    max-width: 100%;
+  }
+  
+  .who__paragraph:last-child {
+    margin-bottom: 0;
+  }
+  
+  .who__paragraph h3 {
+    margin-bottom: 10px;
+    font-size: 32px;
+    line-height: 40px;
   }
 
   .who__paragraph--expose {
@@ -3180,31 +3172,23 @@ h1, h2, h3, h4, h5, h6 {
   /*#endregion aboutPage*/
 
   /*#region healthcarePage*/
-  .healthcare__greeting {
-    text-align: center;
-  }
-
-  .mission__title--healthcare {
-    text-align: center;
-  }
-
   .who {
     padding: 32px 16px 45px;
   }
   
-  .who__title {
+  .who h2 {
     margin: 0 auto 16px;
     font-size: 28px;
     line-height: 33px;
     max-width: max-content;
   }
   
-  .who__text {
+  .who > p {
     margin: 0 auto 40px;
     max-width: max-content;
   }
   
-  .who__text:nth-child(2) {
+  .who > p:nth-child(2) {
     max-width: max-content;
     margin-bottom: 32px;
   }
@@ -3215,19 +3199,15 @@ h1, h2, h3, h4, h5, h6 {
     row-gap: 40px;
   }
 
-  .who__paragraph-title {
+  .who__paragraph h3 {
+    margin-bottom: 10px;
     font-size: 24px;
     line-height: 30px;
   }
-
-  .who__paragraph-text {
-    font-size: 12px
-  }
-
+  
   .who__paragraph--expose {
     padding: 32px 16px 40px;
   }
-
   /*#endregion healthcarePage*/
 
   /*#region pharmaseutical*/
