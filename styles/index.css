@@ -1012,7 +1012,6 @@ h1, h2, h3, h4, h5, h6 {
 .who__paragraph {
   margin: 0 auto 24px;
   text-align: left;
-  max-width: 1010px;
 }
 
 .who__paragraph:last-child {
@@ -1122,18 +1121,28 @@ h1, h2, h3, h4, h5, h6 {
 /*#endregion pharmaseutical*/
 
 /*#region defense*/
-.defense__greeting-img {
-  height: 425px;
+.who__paragraph.defense__description {
+  padding: 0;
+  margin: 0 auto 105px;
 }
 
-.defense__description {
+.defense__description:nth-child(2) {
+  margin-top: 95px;
   text-align: center;
-  padding: 105px 205px 105px;
 }
 
-.defense__description--without-top-padding {
-  text-align: left;
-  padding-top: 0;
+.defense__description ul {
+  margin-bottom: 16px;
+}
+
+.defense__description ul > li {
+  position: relative;
+  padding-left: 7px;
+}
+
+.defense__description ul > li::before {
+  content: "•";
+  margin-right: 5px;
 }
 
 .defense__description-content {
@@ -1143,32 +1152,52 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 
-.defense__description-paragraph {
-  max-width: 490px;
+.who__paragraph.defense__description-paragraph {
+  max-width: 485px;
+  margin: 0;
+  padding: 0;
 }
 /*#endregion defense*/
 
-/*#region tariff*/
-.tariff__greeting-img {
-  height: 530px;
-}
-/*#endregion tariff*/
-
 /*#region irs*/
-.who__paragraph-title--big {
+.irs__paragraph {
+  padding: 100px 175px 45px;
+  text-align: center;
+}
+
+.who__paragraph--irs h3 {
   font-size: 49px;
-  line-height: 64px;
 }
 
-.who__paragraph--irs {
-  max-width: 100%;
-  margin-left: 0;
-}
-
-.list__item-span {
+.irs__list ul > li > span {
   font-weight: 700;
 }
 /*#endregion irs*/
+
+/*#region education*/
+.education {
+  padding: 85px 175px 115px;
+}
+
+.education__paragraph ul {
+  margin-bottom: 16px;
+}
+
+.education__paragraph ul > li {
+  position: relative;
+  padding-left: 7px;
+}
+
+.education__paragraph ul > li::before {
+  content: "•";
+  margin-right: 5px;
+}
+
+.education div > p:not(:last-child) {
+  margin-bottom: 16px;
+}
+/*#endregion education*/
+
 
 
 /*#region extraLargeScreen*/
@@ -1232,6 +1261,10 @@ h1, h2, h3, h4, h5, h6 {
 
   .pharm__group__paragraph {
     max-width: 560px;
+  }
+
+  .education {
+    padding: 105px 0 115px;
   }
 }
 /*#endregion extraLargeScreen*/
@@ -1752,7 +1785,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   .about--page img {
-    height: 640px;
+    width: 65%;
     margin-bottom: 30px;
   }
   
@@ -1850,47 +1883,56 @@ h1, h2, h3, h4, h5, h6 {
   /*#endregion pharmaseutical*/
 
   /*#region defense*/
-  .defense__greeting-img {
-    height: 460px;
-    margin-bottom: 50px;
+  .who__paragraph.defense__description {
+    padding: 0 48px;
+    margin: 0 auto 75px;
   }
   
-  .defense__description {
+  .defense__description:nth-child(2) {
+    margin-top: 65px;
     text-align: left;
-    padding: 95px 65px 75px;
   }
-
+  
   .defense__description-content {
     flex-direction: column;
   }
   
-  .defense__description-paragraph {
-    margin-top: 68px;
+  .who__paragraph.defense__description-paragraph {
     max-width: max-content;
+    margin: 0;
+    padding: 0 48px;
+    text-align: center;
+  }
+
+  .defense__description-content img {
+    height: 460px;
+    margin-bottom: 50px;
   }
   /*#endregion defense*/
 
-  /*#region tariff*/
-  .tariff__greeting-img {
-    height: 530px;
-  }
-  /*#endregion tariff*/
-
   /*#region irs*/
-  .who__paragraph-title--big {
+  .irs__paragraph {
+    padding: 60px 48px 70px;
+    text-align: left;
+  }
+  
+  .who__paragraph--irs h3 {
     font-size: 43px;
     margin-bottom: 70px;
   }
 
-  .who__paragraph-title--big + .who__paragraph-text {
+  .who__paragraph--irs p {
     display: none;
   }
-
-  .who__paragraph--irs {
-    max-width: 100%;
-    margin-left: 0;
-  }
   /*#endregion irs*/
+
+  /*#region education*/
+  .education {
+    padding: 65px 65px 75px;
+  }
+  /*#endregion education*/
+
+
 
 }
 /*#endregion tablet*/
@@ -2430,7 +2472,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   .about--page img {
-    height: 495px;
+    width: 60%;
     margin-bottom: 20px;
   }
   
@@ -2534,48 +2576,55 @@ h1, h2, h3, h4, h5, h6 {
   /*#endregion pharmaseutical*/
 
   /*#region defense*/
-  .defense__greeting-img {
-    height: 350px;
-    margin-bottom: 50px;
+  .who__paragraph.defense__description {
+    padding: 0 35px;
+    margin: 0 auto 55px;
   }
   
-  .defense__description {
+  .defense__description:nth-child(2) {
+    margin-top: 45px;
     text-align: left;
-    padding: 50px 35px 35px;
   }
-
+  
   .defense__description-content {
     flex-direction: column;
   }
   
-  .defense__description-paragraph {
-    margin-top: 56px;
+  .who__paragraph.defense__description-paragraph {
     max-width: max-content;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .defense__description-content img {
+    height: 350px;
+    margin-bottom: 50px;
   }
   /*#endregion defense*/
 
-  /*#region tariff*/
-  .tariff__greeting-img {
-    height: 395px;
-  }
-  /*#endregion tariff*/
-
   /*#region irs*/
-  .who__paragraph-title--big {
+  .irs__paragraph {
+    padding: 60px 28px 80px;
+    text-align: left;
+  }
+  
+  .who__paragraph--irs h3 {
     font-size: 31px;
     line-height: 40px;
     margin-bottom: 36px;
   }
 
-  .who__paragraph-title--big + .who__paragraph-text {
+  .who__paragraph--irs p {
     display: none;
   }
-
-  .who__paragraph--irs {
-    max-width: 100%;
-    margin-left: 0;
-  }
   /*#endregion irs*/
+
+  /*#region education*/
+  .education {
+    padding: 45px 30px 70px;
+  }
+  /*#endregion education*/
 
 
 }
@@ -3181,7 +3230,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   .about--page img {
-    height: 320px;
+    width: 50%;
     margin-bottom: 16px;
   }
   
@@ -3279,50 +3328,53 @@ h1, h2, h3, h4, h5, h6 {
   /*#endregion pharmaseutical*/
 
   /*#region defense*/
-  .defense__greeting-img {
-    height: 230px;
-    margin-bottom: 32px;
+  .who__paragraph.defense__description {
+    padding: 0 16px;
+    margin: 0 auto 45px;
   }
   
-  .defense__description {
+  .defense__description:nth-child(2) {
+    margin-top: 32px;
     text-align: left;
-    padding: 32px 16px 45px;
   }
-
+  
   .defense__description-content {
     flex-direction: column;
   }
-
-  .defense__description-content-img {
-    width: 320px;
-  }
   
-  .defense__description-paragraph {
-    margin-top: 32px;
+  .who__paragraph.defense__description-paragraph {
     max-width: max-content;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .defense__description-content img {
+    height: 230px;
+    margin-bottom: 32px;
   }
   /*#endregion defense*/
 
-  /*#region tariff*/
-  .tariff__greeting-img {
-    max-height: 245px;
-  }
-  /*#endregion tariff*/
-
   /*#region irs*/
-  .who__paragraph-title--big {
+  .irs__paragraph {
+    padding: 32px 16px 45px;
+    text-align: left;
+  }
+  
+  .who__paragraph--irs h3 {
     font-size: 28px;
     line-height: 37px;
   }
 
-  .who__paragraph-title--big + .who__paragraph-text {
+  .who__paragraph--irs p {
     display: none;
   }
-
-  .who__paragraph--irs {
-    max-width: 100%;
-    margin-left: 0;
-  }
   /*#endregion irs*/
+
+  /*#region education*/
+  .education {
+    padding: 32px 16px 45px;
+  }
+  /*#endregion education*/
 }
 /*#endregion smallscreens*/
