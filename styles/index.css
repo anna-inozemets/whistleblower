@@ -1012,7 +1012,6 @@ h1, h2, h3, h4, h5, h6 {
 .who__paragraph {
   margin: 0 auto 24px;
   text-align: left;
-  max-width: 1010px;
 }
 
 .who__paragraph:last-child {
@@ -1160,27 +1159,45 @@ h1, h2, h3, h4, h5, h6 {
 }
 /*#endregion defense*/
 
-/*#region tariff*/
-.tariff__greeting-img {
-  height: 530px;
-}
-/*#endregion tariff*/
-
 /*#region irs*/
-.who__paragraph-title--big {
+.irs__paragraph {
+  padding: 100px 175px 45px;
+  text-align: center;
+}
+
+.who__paragraph--irs h3 {
   font-size: 49px;
-  line-height: 64px;
 }
 
-.who__paragraph--irs {
-  max-width: 100%;
-  margin-left: 0;
-}
-
-.list__item-span {
+.irs__list ul > li > span {
   font-weight: 700;
 }
 /*#endregion irs*/
+
+/*#region education*/
+.education {
+  padding: 85px 175px 115px;
+}
+
+.education__paragraph ul {
+  margin-bottom: 16px;
+}
+
+.education__paragraph ul > li {
+  position: relative;
+  padding-left: 7px;
+}
+
+.education__paragraph ul > li::before {
+  content: "•";
+  margin-right: 5px;
+}
+
+.education div > p:not(:last-child) {
+  margin-bottom: 16px;
+}
+/*#endregion education*/
+
 
 
 /*#region extraLargeScreen*/
@@ -1244,6 +1261,10 @@ h1, h2, h3, h4, h5, h6 {
 
   .pharm__group__paragraph {
     max-width: 560px;
+  }
+
+  .education {
+    padding: 105px 0 115px;
   }
 }
 /*#endregion extraLargeScreen*/
@@ -1764,7 +1785,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   .about--page img {
-    width: 90%;
+    width: 65%;
     margin-bottom: 30px;
   }
   
@@ -1889,27 +1910,29 @@ h1, h2, h3, h4, h5, h6 {
   }
   /*#endregion defense*/
 
-  /*#region tariff*/
-  .tariff__greeting-img {
-    height: 530px;
-  }
-  /*#endregion tariff*/
-
   /*#region irs*/
-  .who__paragraph-title--big {
+  .irs__paragraph {
+    padding: 60px 48px 70px;
+    text-align: left;
+  }
+  
+  .who__paragraph--irs h3 {
     font-size: 43px;
     margin-bottom: 70px;
   }
 
-  .who__paragraph-title--big + .who__paragraph-text {
+  .who__paragraph--irs p {
     display: none;
   }
-
-  .who__paragraph--irs {
-    max-width: 100%;
-    margin-left: 0;
-  }
   /*#endregion irs*/
+
+  /*#region education*/
+  .education {
+    padding: 65px 65px 75px;
+  }
+  /*#endregion education*/
+
+
 
 }
 /*#endregion tablet*/
@@ -2449,7 +2472,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   .about--page img {
-    width: 85%;
+    width: 60%;
     margin-bottom: 20px;
   }
   
@@ -2580,28 +2603,28 @@ h1, h2, h3, h4, h5, h6 {
   }
   /*#endregion defense*/
 
-  /*#region tariff*/
-  .tariff__greeting-img {
-    height: 395px;
-  }
-  /*#endregion tariff*/
-
   /*#region irs*/
-  .who__paragraph-title--big {
+  .irs__paragraph {
+    padding: 60px 28px 80px;
+    text-align: left;
+  }
+  
+  .who__paragraph--irs h3 {
     font-size: 31px;
     line-height: 40px;
     margin-bottom: 36px;
   }
 
-  .who__paragraph-title--big + .who__paragraph-text {
+  .who__paragraph--irs p {
     display: none;
   }
-
-  .who__paragraph--irs {
-    max-width: 100%;
-    margin-left: 0;
-  }
   /*#endregion irs*/
+
+  /*#region education*/
+  .education {
+    padding: 45px 30px 70px;
+  }
+  /*#endregion education*/
 
 
 }
@@ -3207,7 +3230,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   .about--page img {
-    width: 85%;
+    width: 50%;
     margin-bottom: 16px;
   }
   
@@ -3332,26 +3355,26 @@ h1, h2, h3, h4, h5, h6 {
   }
   /*#endregion defense*/
 
-  /*#region tariff*/
-  .tariff__greeting-img {
-    max-height: 245px;
-  }
-  /*#endregion tariff*/
-
   /*#region irs*/
-  .who__paragraph-title--big {
+  .irs__paragraph {
+    padding: 32px 16px 45px;
+    text-align: left;
+  }
+  
+  .who__paragraph--irs h3 {
     font-size: 28px;
     line-height: 37px;
   }
 
-  .who__paragraph-title--big + .who__paragraph-text {
+  .who__paragraph--irs p {
     display: none;
   }
-
-  .who__paragraph--irs {
-    max-width: 100%;
-    margin-left: 0;
-  }
   /*#endregion irs*/
+
+  /*#region education*/
+  .education {
+    padding: 32px 16px 45px;
+  }
+  /*#endregion education*/
 }
 /*#endregion smallscreens*/
