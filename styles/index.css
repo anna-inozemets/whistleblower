@@ -1208,6 +1208,109 @@ h1, h2, h3, h4, h5, h6 {
 }
 /*#endregion security*/
 
+/*#region faq*/
+.faq {
+  padding: 45px 250px 50px;
+  text-align: center;
+}
+
+.faq h2 {
+  font-size: 49px;
+  line-height: 64px;
+}
+
+.faq p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 29px;
+  margin-bottom: 16px;
+}
+
+.faq p:last-child {
+  margin-bottom: 0;
+}
+
+.faq__accordion {
+  padding: 0 155px 135px;
+}
+
+.accordion {
+  margin-bottom: 26px;
+}
+
+.accordion:last-child {
+  margin-bottom: 0;
+}
+
+.accordion__header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border: 1px solid #132A4E;
+
+  cursor: pointer;
+}
+
+.accordion__header h3 {
+  padding: 24px 72px;
+  font-size: 25px;
+  line-height: 32px;
+  font-feature-settings: 'ss04' on, 'ss03' on, 'ss02' on;
+}
+
+.accordion__header button {
+  position: relative;
+  background: #132A4E;
+}
+
+.accordion__header button span {
+  display: block;
+  margin: 0 25px;
+  height: 6px;
+  width: 24px;
+  background-color: #fff;
+}
+
+.accordion__header button span::after {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  content: '';
+  display: block;
+  height: 24px;
+  width: 6px;
+  background-color: #fff;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.accordion__header.open button span::after {
+  transform: rotate(90deg);
+  opacity: 0;
+}
+
+.accordion-body {
+  height: 0;
+  overflow: hidden;
+  padding: 0 72px;
+  border: 1px solid #132A4E;
+  transition: height 0.3s ease-in-out;
+}
+
+.accordion-body p {
+  text-align: center;
+  color: #000000;
+  margin-bottom: 16px;
+}
+
+.accordion-body p:first-child {
+  margin-top: 32px;
+}
+
+.accordion-body p:last-child {
+  margin-bottom: 32px;
+}
+/*#endregion faq*/
 
 
 
@@ -1276,6 +1379,10 @@ h1, h2, h3, h4, h5, h6 {
 
   .education {
     padding: 105px 0 115px;
+  }
+
+  .security {
+    padding: 65px 0 75px;
   }
 }
 /*#endregion extraLargeScreen*/
@@ -1942,6 +2049,39 @@ h1, h2, h3, h4, h5, h6 {
     padding: 65px 65px 75px;
   }
   /*#endregion education*/
+
+  /*#region security*/
+  .security {
+    padding: 60px 48px 70px;
+  }
+  /*#endregion security*/
+
+  /*#region faq*/
+.faq {
+  padding: 35px 48px 85px;
+}
+
+.faq h2 {
+  font-size: 42px;
+  line-height: 64px;
+}
+
+.faq__accordion {
+  padding: 0 30px 92px;
+}
+
+.accordion__header h3 {
+  padding: 22px 70px;
+}
+
+.accordion__header button span {
+  margin: 0 12px;
+}
+
+.accordion-body {
+  padding: 0 49px;
+}
+/*#endregion faq*/
 
 
 
@@ -2636,6 +2776,44 @@ h1, h2, h3, h4, h5, h6 {
     padding: 45px 30px 70px;
   }
   /*#endregion education*/
+
+  /*#region security*/
+  .security {
+    padding: 60px 28px 70px;
+  }
+  /*#endregion security*/
+
+  /*#region faq*/
+  .faq {
+    padding: 25px 30px 35px;
+  }
+
+  .faq__accordion {
+    padding: 0 21px 95px;
+  }
+
+  .accordion {
+    margin-bottom: 40px;
+  }
+
+  .accordion__header h3 {
+    padding: 18px 12px;
+    font-size: 15px;
+  }
+
+  .accordion__header button span {
+    margin: 0 12px;
+    height: 4px;
+  }
+
+  .accordion__header button span::after {
+    width: 4px;
+  }
+
+  .accordion-body {
+    padding: 0 60px;
+  }
+  /*#endregion faq*/
 
 
 }
@@ -3387,5 +3565,55 @@ h1, h2, h3, h4, h5, h6 {
     padding: 32px 16px 45px;
   }
   /*#endregion education*/
+
+  /*#region security*/
+  .security {
+    padding: 32px 16px 45px;
+  }
+  /*#endregion security*/
+
+  /*#region faq*/
+  .faq {
+    padding: 25px 16px 35px;
+  }
+
+  .faq h2 {
+    font-size: 40px;
+    line-height: 58px;
+  }
+
+  .faq p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  
+  .faq__accordion {
+    padding: 0 18px 45px;
+  }
+
+  .accordion {
+    margin-bottom: 26px;
+  }
+
+  .accordion__header h3 {
+    padding: 18px 12px;
+    font-size: 15px;
+  }
+  
+  .accordion__header button span {
+    margin: 0 12px;
+    height: 4px;
+  }
+
+  .accordion__header button span::after {
+    width: 4px;
+  }
+
+  .accordion-body {
+    padding: 0 40px;
+  }
+  /*#endregion faq*/
+
+
 }
 /*#endregion smallscreens*/
