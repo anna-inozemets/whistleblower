@@ -1122,18 +1122,28 @@ h1, h2, h3, h4, h5, h6 {
 /*#endregion pharmaseutical*/
 
 /*#region defense*/
-.defense__greeting-img {
-  height: 425px;
+.who__paragraph.defense__description {
+  padding: 0;
+  margin: 0 auto 105px;
 }
 
-.defense__description {
+.defense__description:nth-child(2) {
+  margin-top: 95px;
   text-align: center;
-  padding: 105px 205px 105px;
 }
 
-.defense__description--without-top-padding {
-  text-align: left;
-  padding-top: 0;
+.defense__description ul {
+  margin-bottom: 16px;
+}
+
+.defense__description ul > li {
+  position: relative;
+  padding-left: 7px;
+}
+
+.defense__description ul > li::before {
+  content: "•";
+  margin-right: 5px;
 }
 
 .defense__description-content {
@@ -1143,8 +1153,10 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 
-.defense__description-paragraph {
-  max-width: 490px;
+.who__paragraph.defense__description-paragraph {
+  max-width: 485px;
+  margin: 0;
+  padding: 0;
 }
 /*#endregion defense*/
 
@@ -1752,7 +1764,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   .about--page img {
-    height: 640px;
+    width: 90%;
     margin-bottom: 30px;
   }
   
@@ -1850,23 +1862,30 @@ h1, h2, h3, h4, h5, h6 {
   /*#endregion pharmaseutical*/
 
   /*#region defense*/
-  .defense__greeting-img {
-    height: 460px;
-    margin-bottom: 50px;
+  .who__paragraph.defense__description {
+    padding: 0 48px;
+    margin: 0 auto 75px;
   }
   
-  .defense__description {
+  .defense__description:nth-child(2) {
+    margin-top: 65px;
     text-align: left;
-    padding: 95px 65px 75px;
   }
-
+  
   .defense__description-content {
     flex-direction: column;
   }
   
-  .defense__description-paragraph {
-    margin-top: 68px;
+  .who__paragraph.defense__description-paragraph {
     max-width: max-content;
+    margin: 0;
+    padding: 0 48px;
+    text-align: center;
+  }
+
+  .defense__description-content img {
+    height: 460px;
+    margin-bottom: 50px;
   }
   /*#endregion defense*/
 
@@ -2430,7 +2449,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   .about--page img {
-    height: 495px;
+    width: 85%;
     margin-bottom: 20px;
   }
   
@@ -2534,23 +2553,30 @@ h1, h2, h3, h4, h5, h6 {
   /*#endregion pharmaseutical*/
 
   /*#region defense*/
-  .defense__greeting-img {
-    height: 350px;
-    margin-bottom: 50px;
+  .who__paragraph.defense__description {
+    padding: 0 35px;
+    margin: 0 auto 55px;
   }
   
-  .defense__description {
+  .defense__description:nth-child(2) {
+    margin-top: 45px;
     text-align: left;
-    padding: 50px 35px 35px;
   }
-
+  
   .defense__description-content {
     flex-direction: column;
   }
   
-  .defense__description-paragraph {
-    margin-top: 56px;
+  .who__paragraph.defense__description-paragraph {
     max-width: max-content;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .defense__description-content img {
+    height: 350px;
+    margin-bottom: 50px;
   }
   /*#endregion defense*/
 
@@ -3181,7 +3207,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   .about--page img {
-    height: 320px;
+    width: 85%;
     margin-bottom: 16px;
   }
   
@@ -3279,27 +3305,30 @@ h1, h2, h3, h4, h5, h6 {
   /*#endregion pharmaseutical*/
 
   /*#region defense*/
-  .defense__greeting-img {
-    height: 230px;
-    margin-bottom: 32px;
+  .who__paragraph.defense__description {
+    padding: 0 16px;
+    margin: 0 auto 45px;
   }
   
-  .defense__description {
+  .defense__description:nth-child(2) {
+    margin-top: 32px;
     text-align: left;
-    padding: 32px 16px 45px;
   }
-
+  
   .defense__description-content {
     flex-direction: column;
   }
-
-  .defense__description-content-img {
-    width: 320px;
-  }
   
-  .defense__description-paragraph {
-    margin-top: 32px;
+  .who__paragraph.defense__description-paragraph {
     max-width: max-content;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .defense__description-content img {
+    height: 230px;
+    margin-bottom: 32px;
   }
   /*#endregion defense*/
 
