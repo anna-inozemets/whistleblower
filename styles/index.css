@@ -1198,6 +1198,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 /*#endregion education*/
 
+/*#region security*/
+.security {
+  padding: 85px 200px 32px;
+}
+
+.security p:first-child {
+  margin-bottom: 0;
+}
+/*#endregion security*/
+
+
 
 
 /*#region extraLargeScreen*/
