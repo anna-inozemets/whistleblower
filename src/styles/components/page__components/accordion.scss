@@ -1,0 +1,151 @@
+@import '../../utils/mixins';
+@import '../../utils/variables/variables';
+
+.accordion {
+  margin-bottom: 26px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.accordion__header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border: 1px solid #132a4e;
+  cursor: pointer;
+
+  h3 {
+    padding: 24px 72px;
+    font-size: 25px;
+    line-height: 32px;
+    font-feature-settings: "ss04" on, "ss03" on, "ss02" on;
+  }
+
+  button {
+    position: relative;
+    background: #132a4e;
+
+    span {
+      display: block;
+      margin: 0 25px;
+      height: 6px;
+      width: 24px;
+      background-color: #fff;
+
+      &::after {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        content: "";
+        display: block;
+        height: 24px;
+        width: 6px;
+        background-color: #fff;
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+      }
+    }
+  }
+
+  &.open button span::after {
+    transform: rotate(90deg);
+    opacity: 0;
+  }
+}
+
+.accordion-body {
+  height: 0;
+  overflow: hidden;
+  padding: 0 72px;
+  transition: height 0.3s ease-in-out;
+
+  &.open {
+    border: 1px solid #132a4e;
+    border-top: none;
+  }
+
+  p {
+    text-align: left;
+    color: #000000;
+    margin-bottom: 16px;
+
+    &:first-child {
+      margin-top: 32px;
+    }
+
+    &:last-child {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+@include smallDesktop {
+  .accordion__header {
+    h3 {
+      padding: 22px 70px;
+    }
+
+    button span {
+      margin: 0 12px;
+    }
+  }
+
+  .accordion-body {
+    padding: 0 49px;
+  }
+}
+
+@include tablet {
+  .accordion {
+    margin-bottom: 40px;
+  }
+
+  .accordion__header {
+    h3 {
+      padding: 18px 12px;
+      font-size: 15px;
+    }
+
+    button span {
+      margin: 0 12px;
+      height: 4px;
+
+      &::after {
+        width: 4px;
+      }
+    }
+  }
+
+  .accordion-body {
+    padding: 0 60px;
+  }
+}
+
+@include phone {
+  .accordion {
+    margin-bottom: 26px;
+  }
+
+  .accordion__header {
+    h3 {
+      padding: 18px 12px;
+      font-size: 15px;
+    }
+
+    button span {
+      margin: 0 12px;
+      height: 4px;
+
+      &::after {
+        width: 4px;
+      }
+    }
+  }
+
+  .accordion-body {
+    padding: 0 40px;
+  }
+}
+

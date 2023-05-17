@@ -1,0 +1,195 @@
+@import '../../utils/variables/variables';
+@import '../../utils/mixins';
+
+.freeevaluation {
+  padding: 105px 0 125px;
+  background-color: $light-blue;
+
+  form {
+    max-width: 695px;
+    margin: 0 auto;
+    padding: 26px 40px 66px;
+    background: #f7f7f7;
+    box-shadow: 0px 9px 18px rgba(0, 0, 0, 0.15);
+
+    h2 {
+      font-size: 31px;
+      line-height: 40px;
+      text-align: center;
+      font-feature-settings: "ss04" on, "ss03" on, "ss02" on;
+    }
+
+    p:first-of-type {
+      margin-bottom: 12px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+      font-feature-settings: "ss04" on, "ss03" on, "ss02" on;
+      color: #000000;
+    }
+
+    fieldset {
+      display: flex;
+      gap: 24px;
+      border: none;
+    }
+
+    label {
+      display: block;
+      width: 100%;
+      margin-bottom: 20px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 20px;
+      font-feature-settings: "ss04" on, "ss03" on, "ss02" on;
+      color: #555555;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+
+    input, select, textarea {
+      display: block;
+      width: 100%;
+      padding: 15px 20px;
+      margin-top: 8px;
+      background: $white;
+      border: 1px solid #999999;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      font-feature-settings: "ss04" on, "ss03" on, "ss02" on;
+      color: #757575;
+    }
+
+    textarea {
+      resize: none;
+      margin-bottom: 16px;
+    }
+
+    p {
+      margin-bottom: 40px;
+      font-size: 14px;
+      line-height: 16px;
+      font-feature-settings: "ss04" on, "ss03" on, "ss02" on;
+      color: #555555;
+  
+      &:last-child {
+        margin-bottom: 0;
+        text-align: left;
+        font-weight: 300;
+      }
+    }
+
+    button {
+      width: 100%;
+      margin-top: 40px;
+      margin-bottom: 16px;
+      font-family: "Open Sans";
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      text-transform: capitalize;
+      font-feature-settings: "ss04" on, "ss03" on, "ss02" on;
+      color: $black;
+  
+      &::after {
+        left: 250px;
+      }
+    }
+  }
+
+  & .submit-btn {
+    padding: 20px;
+  
+    &::after {
+      position: initial;
+      margin-left: 15px;
+    }
+  }
+}
+
+.icarus-layout .icarus-field {
+  margin-bottom: 20px;
+}
+
+.icarus-form > .icarus-layout > .field-lead_details {
+  margin-bottom: 0;
+}
+
+.field-wba_terms_of_service label:first-child {
+  opacity: 0;
+}
+
+.icarus-field-error {
+  display: none;
+}
+
+.region-header-first {
+  flex: auto;
+}
+
+@include smallDesktop {
+  .freeevaluation {
+    padding: 80px 0 90px;
+  }
+}
+
+@include tablet {
+  .freeevaluation {
+    padding: 65px 0 75px;
+
+    form {
+      max-width: 520px;
+
+      button.yellow-link::after {
+        right: 160px;
+      }
+    }
+  }
+}
+
+@include phone {
+  .freeevaluation {
+    padding: 32px 0 75px;
+
+    form {
+      padding: 15px;
+      padding-bottom: 50px;
+      width: 95%;
+      max-width: 420px;
+
+      fieldset {
+        margin-bottom: 20px;
+      }
+
+      input, select, textarea {
+        padding: 8px;
+        margin-top: 2px;
+        font-size: 12px;
+        line-height: 20px;
+      }
+
+      button {
+        margin-top: 20px;
+        margin-bottom: 5px;
+      }
+  
+      label {
+        margin-bottom: 8px;
+      }
+
+      p {
+        font-size: 12px;
+        line-height: 14px;
+        margin-bottom: 32px;
+      }
+  
+      button.yellow-link::after {
+        right: 80px;
+      }
+    }
+  }
+}

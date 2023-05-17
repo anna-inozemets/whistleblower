@@ -1,0 +1,32 @@
+@import '../../utils/variables/variables';
+
+.phone__number-fixed {
+  display: none;
+  position: fixed;
+  transform: rotate(270deg);
+  background: $light-blue;
+  height: 65px;
+  width: 190px;
+  right: -65px;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 900;
+  color: $white;
+  font-family: 'Roboto', sans-serif;
+  top: 50%;
+  bottom: 50%;
+  transition: 300ms;
+
+  &:hover {
+    background: $yellow;
+    text-decoration: none;
+    color: $light-blue;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .phone__number-fixed {
+    display: flex;
+  }
+}

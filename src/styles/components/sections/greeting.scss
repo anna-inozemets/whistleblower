@@ -1,0 +1,288 @@
+@import '../../utils/variables/variables';
+@import '../../utils/mixins';
+
+
+.greeting {
+  background-color: $light-blue;
+  padding: 30px 88px 103px;
+  margin-bottom: 70px;
+
+  &__description {
+    @include flexbox-center-space-between;
+    margin-bottom: 70px;
+  }
+
+  &__description-text {
+    max-width: 540px;
+
+    p:first-child {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      font-feature-settings: "ss04" on, "ss03" on, "ss02" on;
+      color: $white;
+    }
+  
+    h1 {
+      font-size: 49px;
+      line-height: 64px;
+      font-feature-settings: "calt" off;
+      color: $white;
+    }
+  
+    p:not(:first-child) {
+      margin-bottom: 25px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: $white;
+    }
+  }
+
+  &__examples {
+    @include flexbox-center-space-between;
+
+    p {
+      margin-right: 116px;
+      font-family: "Roboto";
+      font-weight: 900;
+      font-size: 31px;
+      line-height: 36px;
+      color: $white;
+      text-transform: capitalize;
+    }
+  }
+
+  &__examples-companies {
+    display: flex;
+    align-items: center;
+  
+    a {
+      height: 52px;
+      margin-right: 116px;
+  
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  
+    img {
+      height: 52px;
+    }
+  }
+}
+
+.about__greeting {
+  background-color: $transparent-blue;
+
+  &-description {
+    max-width: 575px;
+  
+    h2 {
+      font-size: 49px;
+      line-height: 64px;
+      margin-bottom: 20px;
+    }
+  
+    p {
+      margin-bottom: 25px;
+  
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+@include smallDesktop {
+  .greeting {
+    padding: 45px 30px 70px 70px;
+
+    &__description-text {
+      max-width: 430px;
+
+      h1 {
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 5px;
+      }
+  
+      p:not(:first-child) {
+        margin-bottom: 30px;
+      }
+    }
+
+    &__description {
+      img {
+        height: 230px;
+      }
+    }
+
+    &__examples {
+      display: block;
+      text-align: center;
+
+      p {
+        margin-right: 0;
+        margin-bottom: 15px;
+      }
+    }
+
+    &__examples-companies {
+      justify-content: center;
+
+      a {
+        height: 42px;
+        margin-right: 90px;
+      }
+  
+      img {
+        height: 42px;
+      }
+    }
+  }
+
+  .about__greeting-description {
+    max-width: max-content;
+
+    h2 {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@include tablet {
+  .greeting {
+    padding: 20px 40px 70px;
+
+    &__description {
+      flex-direction: column-reverse;
+      margin-bottom: 45px;
+
+      img {
+        height: 305px;
+        margin-bottom: 48px;
+      }
+    }
+
+    &__description-text {
+      max-width: max-content;
+
+      p:first-child {
+        margin-bottom: 13px;
+      }
+  
+      h1 {
+        font-size: 33px;
+        line-height: 40px;
+        margin-bottom: 14px;
+      }
+  
+      p:not(:first-child) {
+        margin-bottom: 20px;
+      }
+    }
+
+    &__examples-companies {
+      a {
+        height: 38px;
+        margin-right: 40px;
+      }
+  
+      img {
+        height: 38px;
+      }
+    }
+  }
+
+  .about__greeting-description {
+    h2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@include phone {
+  .greeting {
+    padding: 16px 16px 22px;
+    margin-bottom: 45px;
+
+    &__description {
+      margin-bottom: 36px;
+
+      img {
+        height: 200px;
+        margin-bottom: 35px;
+      }
+    }
+
+    &__description-text {
+      p:first-child {
+        margin-bottom: 0;
+        font-size: 16px;
+      }
+  
+      h1 {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 5px;
+      }
+  
+      p:not(:first-child) {
+        margin-bottom: 15px;
+      }
+    }
+
+    &__examples {
+      p {
+        margin-right: 0;
+        margin-bottom: 15px;
+      }
+    }
+
+    &__examples-companies {
+      flex-wrap: wrap;
+  
+      a {
+        height: 34px;
+        margin-right: 15px;
+        margin-bottom: 10px;
+      }
+  
+      img {
+        height: 34px;
+      }
+    }
+  }
+
+  .about__greeting-description {
+    h2 {
+      font-size: 28px;
+      line-height: 32px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+}

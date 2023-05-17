@@ -1,0 +1,23 @@
+@import '../../utils/_mixins.scss';
+
+.page__wrapper {
+  max-width: 1310px;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+
+  @include tablet {
+    .page__wrapper {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
+  @include phone {
+    .page__wrapper {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+}

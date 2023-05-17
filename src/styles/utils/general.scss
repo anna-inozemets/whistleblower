@@ -1,0 +1,28 @@
+@import './variables/variables';
+@import './mixins';
+
+body {
+  font-family: "Open Sans", "sans-serif";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $dark-blue;
+}
+
+a {
+  font-family: "Open Sans", "sans-serif";
+  font-weight: 700;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", "serif";
+  font-weight: 700;
+  color: $dark-blue;
+}
+
+@include phone {
+  body {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}

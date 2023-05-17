@@ -1,0 +1,31 @@
+@import '../utils/mixins';
+
+.irs__paragraph {
+  padding: 100px 175px 45px;
+  text-align: center;
+}
+
+.irs__list ul > li > span {
+  font-weight: 700;
+}
+
+@include smallDesktop {
+  .irs__paragraph {
+    padding: 60px 48px 70px;
+    text-align: left;
+  }
+}
+
+@include tablet {
+  .irs__paragraph {
+    padding: 60px 28px 80px;
+    text-align: left;
+  }
+}
+
+@include phone {
+  .irs__paragraph {
+    padding: 32px 16px 45px;
+    text-align: left;
+  }
+}

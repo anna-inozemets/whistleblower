@@ -1,0 +1,60 @@
+@import '../../utils/variables/colors';
+@import '../../utils/mixins';
+
+.yellow-link, button.submit-btn {
+  position: relative;
+  padding: 20px 72px 20px 36px;
+  font-family: "Open Sans Condensed", "Open Sans", "sans-serif";
+  font-size: 18px;
+  text-transform: capitalize;
+  font-feature-settings: "ss04" on, "ss03" on, "ss02" on;
+  color: $black;
+  background: $yellow;
+  border-radius: 100px;
+
+  &::after {
+    position: absolute;
+    content: url("../images/arrow.svg");
+    right: 36px;
+  }
+}
+
+@include smallDesktop {
+  .yellow-link {
+    &.yellow-link--small {
+      position: static;
+      padding: 5px 20px;
+      font-size: 13px;
+      line-height: 24px;
+
+      &::after {
+        content: "";
+      }
+    }
+  }
+
+  .yellow-link, button.submit-btn {
+    padding: 15px 72px 15px 36px;
+  }
+}
+
+@include phone {
+  .yellow-link,
+  button.submit-btn {
+    padding: 15px 62px 15px 26px;
+    font-size: 16px;
+    line-height: 24px;
+
+    &::after {
+      right: 26px;
+    }
+
+    &.yellow-link--small {
+      padding: 3px 10px;
+    }
+  }
+
+  button.submit-btn {
+    padding: 15px;
+  }
+}

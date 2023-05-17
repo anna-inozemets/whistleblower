@@ -1,0 +1,29 @@
+@mixin extraLargeDesktop {
+  @media (min-width: 1500px) {
+    @content;
+  };
+};
+
+@mixin smallDesktop {
+  @media (max-width: 1224px) {
+    @content;
+  };
+};
+
+@mixin tablet {
+  @media (max-width: 768px) {
+    @content;
+  };
+};
+
+@mixin phone {
+  @media (max-width: 583px) {
+    @content;
+  }
+}
+
+@mixin flexbox-center-space-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

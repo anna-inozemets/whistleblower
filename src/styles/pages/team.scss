@@ -1,0 +1,64 @@
+@import '../utils/mixins';
+@import '../utils/variables/variables';
+@import '../components/sections/team__cards.scss';
+
+.team {
+  padding: 0 160px 70px;
+  text-align: center;
+
+  h2 {
+    font-size: 49px;
+    line-height: 64px;
+    font-feature-settings: "calt" off;
+    margin-bottom: 21px;
+  }
+
+  p {
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@include extraLargeDesktop {
+  .team {
+    padding: 0 6px 70px;
+  }
+}
+
+@include smallDesktop {
+  .team {
+    padding: 0 40px 85px;
+
+    h2 {
+      font-size: 42px;
+      margin-bottom: 19px;
+    }
+  }
+}
+
+@include tablet {
+  .team {
+    padding: 0 20px 100px;
+
+    h2 {
+      font-size: 30px;
+      line-height: 48px;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+@include phone {
+  .team {
+    padding: 0 16px 45px;
+
+    h2 {
+      font-size: 30px;
+      line-height: 48px;
+      margin-bottom: 5px;
+    }
+  }
+}

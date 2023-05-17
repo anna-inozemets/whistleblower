@@ -1,0 +1,317 @@
+@import '../../utils/variables/variables';
+@import '../../utils/mixins';
+
+.cases {
+  position: relative;
+  text-align: center;
+  padding: 0;
+
+  a:first-child {
+    position: absolute;
+    top: 250px;
+    right: 0;
+    padding: 10px 14px 10px 37px;
+    font-family: "Roboto";
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 21px;
+    color: $white;
+    background-color: $light-blue;
+    transform: rotate(-90deg);
+
+    &::before {
+      position: absolute;
+      left: 5px;
+      top: 5px;
+      transform: rotate(90deg);
+      content: url("../images/phone.svg");
+    }
+  }
+
+  h2 {
+    margin-bottom: 60px;
+    font-size: 49px;
+    line-height: 64px;
+    font-feature-settings: "calt" off;
+  }
+
+  &__cards {
+    margin: 0 auto 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 305px);
+    column-gap: 80px;
+    row-gap: 37px;
+    width: max-content;
+    align-items: stretch;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    cursor: pointer;
+
+    div:first-child {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 160px;
+      background-color: $yellow;
+    }
+
+    img {
+      height: 83px;
+    }
+
+    div:nth-child(2) {
+      padding: 36px;
+      background-color: $transparent-blue;
+      flex-grow: 1;
+    }
+
+    h3 {
+      font-family: "Open Sans";
+      margin-bottom: 16px;
+      font-size: 20px;
+      line-height: 24px;
+      font-feature-settings: "ss04" on, "ss03" on, "ss02" on;
+    }
+
+    p {
+      font-feature-settings: "ss04" on, "ss03" on, "ss02" on;
+    }
+  }
+
+  a:last-child {
+    margin-bottom: 100px;
+  }
+}
+
+.main-cases {
+  margin-top: 60px;
+  margin-bottom: 85px;
+}
+
+.fraud-cases {
+  margin-bottom: 130px;
+}
+
+.cases__cards--about-page {
+  margin-bottom: 110px;
+}
+
+.cases.who__cards {
+  margin: 0 auto 70px;
+  width: max-content;
+  display: grid;
+  grid-template-columns: repeat(4, 195px);
+  column-gap: 90px;
+  row-gap: 50px;
+}
+
+@include smallDesktop {
+  .cases {
+    padding: 0 64px;
+
+    a:first-child {
+      display: none;
+    }
+
+    h2 {
+      font-size: 40px;
+    }
+
+  &__cards {
+    margin: 0 auto 55px;
+    grid-template-columns: repeat(2, 351px);
+    column-gap: 55px;
+    row-gap: 37px;
+  }
+
+  &__card {
+      div:first-child {
+        height: 210px;
+      }
+
+      img {
+        height: 83px;
+      }
+
+      div:nth-child(2) {
+        padding: 36px 30px;
+      }
+    }
+  }
+
+  .main-cases {
+    margin-top: 40px;
+    margin-bottom: 65px;
+  }
+
+  .fraud-cases {
+    margin-bottom: 105px;
+  }
+
+  .cases__cards--about-page .cases__card .cases__card-img-wrapper {
+    height: 160px;
+  }
+
+  .cases__cards--about-page {
+    row-gap: 44px;
+    margin-bottom: 80px;
+  }
+
+  .cases {
+    &.who__cards {
+      grid-template-columns: repeat(3, 195px);
+      column-gap: 50px;
+    }
+
+    .who__cards .who__card .who__card-img-wrapper {
+      width: 130px;
+      height: 130px;
+
+      .who__card img {
+        height: 80px;
+      }
+    }
+  }
+}
+
+@include tablet {
+  .cases {
+    padding: 0 74px;
+
+    h2 {
+      font-size: 32px;
+    }
+
+    &__cards {
+      margin: 0 auto 40px;
+      grid-template-columns: repeat(1, 430px);
+      row-gap: 20px;
+    }
+
+    &__card {
+      div:first-child {
+        height: 125px;
+      }
+
+      img {
+        height: 73px;
+      }
+
+      div:nth-child(2) {
+        padding: 92px 51px;
+      }
+    }
+
+    a:last-child {
+      margin-bottom: 110px;
+    }
+  }
+
+  .main-cases {
+    margin-top: 10px;
+    margin-bottom: 55px;
+  }
+
+  .fraud-cases {
+    margin-bottom: 75px;
+  }
+
+  .cases > .cases__cards--about-page {
+    grid-template-columns: repeat(1, 310px);
+  }
+
+  .cases__cards--about-page .cases__card-description {
+    padding: 35px 30px 60px 30px;
+  }
+
+  .cases > .cases__cards--about-page {
+    margin-bottom: 70px;
+  }
+
+  .cases {
+    &.who__cards {
+      margin: 0 auto 70px;
+      grid-template-columns: repeat(2, 195px);
+      column-gap: 90px;
+      row-gap: 60px;
+    }
+
+    .who__cards .who__card .who__card-img-wrapper {
+      width: 130px;
+      height: 130px;
+
+      .who__card img {
+        height: 80px;
+      }
+    }
+  }
+}
+
+@include phone {
+  .cases {
+    padding: 0 16px;
+
+    h2 {
+      font-size: 30px;
+      margin-bottom: 32px;
+    }
+
+    &__cards {
+      margin: 0 auto 32px;
+      grid-template-columns: repeat(1, 285px);
+      row-gap: 30px;
+    }
+
+    &__card {
+      div:first-child {
+        height: 100px;
+      }
+
+      img {
+        height: 55px;
+      }
+
+      div:nth-child(2) {
+        padding: 65px 35px;
+      }
+    }
+
+    a:last-child {
+      margin-bottom: 88px;
+    }
+  }
+
+  .main-cases {
+    margin-top: 10px;
+    margin-bottom: 45px;
+  }
+
+  .fraud-cases {
+    margin-bottom: 65px;
+  }
+
+  .cases > .cases__cards--about-page {
+    margin-bottom: 45px;
+  }
+
+  .cases {
+    &.who__cards {
+      margin: 0 auto 40px;
+      grid-template-columns: repeat(1, 195px);
+      row-gap: 40px;
+    }
+
+    .who__cards .who__card .who__card-img-wrapper {
+      width: 130px;
+      height: 130px;
+
+      .who__card img {
+        height: 80px;
+      }
+    }
+  }
+}

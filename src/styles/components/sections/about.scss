@@ -1,0 +1,170 @@
+@import '../../utils/variables/variables';
+@import '../../utils/mixins';
+
+.about {
+  position: relative;
+  @include flexbox-center-space-between;
+  padding: 135px 0 175px 0;
+}
+
+.about__description {
+  max-width: 500px;
+
+  h2 {
+    margin-bottom: 15px;
+    font-size: 49px;
+    line-height: 64px;
+    font-feature-settings: "calt" off;
+    text-transform: capitalize;
+  }
+
+  p {
+    margin-bottom: 30px;
+  }
+}
+
+.about img {
+  height: 400px;
+}
+
+.about__decoration {
+  position: absolute;
+  bottom: 160px;
+  right: 105px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 230px;
+  width: 235px;
+  background-color: $yellow;
+  color: #173756;
+  border-radius: 50%;
+  font-family: "Roboto", sans-serif;
+
+  p {
+    &:nth-child(odd) {
+      margin-bottom: 2px;
+      font-weight: 900;
+      font-size: 32px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    &:nth-child(even) {
+      margin-bottom: 15px;
+      font-weight: 500;
+      font-size: 15px;
+      text-align: center;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@include smallDesktop {
+  .about {
+    flex-direction: column-reverse;
+    padding: 95px 85px 75px;
+  }
+
+  .about__description {
+    max-width: max-content;
+    text-align: center;
+    margin-top: 115px;
+
+    h2 {
+      font-size: 40px;
+    }
+
+    p {
+      margin-bottom: 40px;
+      padding-left: 75px;
+      padding-right: 75px;
+    }
+  }
+
+  .about img {
+    height: 470px;
+  }
+
+  .about__decoration {
+    top: 310px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
+
+@include tablet {
+  .about {
+    padding: 120px 55px 70px;
+  }
+
+  .about__description {
+    margin-top: 90px;
+
+    h2 {
+      font-size: 30px;
+    }
+
+    p {
+      margin-bottom: 70px;
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+  }
+
+  .about img {
+    height: 370px;
+  }
+
+  .about__decoration {
+    top: 280px;
+    right: 24%;
+  }
+}
+
+@include phone {
+  .about {
+    padding: 32px 16px 45px;
+  }
+
+  .about__description {
+    margin-top: 32px;
+
+    h2 {
+      font-size: 30px;
+    }
+
+    p {
+      font-size: 12px;
+      line-height: 20px;
+      margin-bottom: 32px;
+    }
+  }
+
+  .about img {
+    height: 220px;
+  }
+
+  .about__decoration {
+    top: 125px;
+    right: 34%;
+    height: 155px;
+    width: 165px;
+
+    p {
+      &:nth-child(odd) {
+        font-size: 20px;
+        margin-bottom: 0;
+      }
+
+      &:nth-child(even) {
+        font-size: 11px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}

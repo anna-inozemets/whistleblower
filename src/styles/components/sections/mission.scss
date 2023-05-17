@@ -1,0 +1,72 @@
+@import '../../utils/variables/variables';
+@import '../../utils/mixins';
+
+.mission {
+  padding: 80px 320px 85px;
+  text-align: center;
+  color: #173751;
+
+  &__color {
+    background-color: $transparent-blue;
+  }
+
+  h2 {
+    margin-bottom: 25px;
+    font-size: 49px;
+    line-height: 64px;
+    font-feature-settings: "calt" off;
+  }
+
+  p {
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@include extraLargeDesktop {
+  .mission {
+    padding: 80px 20px 85px;
+  }
+}
+
+@include smallDesktop {
+  .mission {
+    padding: 85px 80px 110px;
+
+    h2 {
+      margin-bottom: 18px;
+      font-size: 40px;
+    }
+  }
+}
+
+@include tablet {
+  .mission {
+    padding: 60px 55px 65px 25px;
+
+    h2 {
+      margin-bottom: 36px;
+    }
+  }
+}
+
+@include phone {
+  .mission {
+    padding: 32px 16px 45px;
+
+    h2 {
+      margin-bottom: 16px;
+      font-size: 30px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 16px;
+    }
+  }
+}
+

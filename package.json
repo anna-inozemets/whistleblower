@@ -1,0 +1,32 @@
+{
+  "name": "whistleblower",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anna-inozemets/whistleblower.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anna-inozemets/whistleblower/issues"
+  },
+  "homepage": "https://github.com/anna-inozemets/whistleblower#readme",
+  "devDependencies": {
+    "browser-sync": "^2.29.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-replace": "^1.1.4",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.62.1"
+  },
+  "dependencies": {
+    "gulp-inject": "^5.0.5"
+  }
+}

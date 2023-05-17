@@ -1,0 +1,47 @@
+@import '../utils/mixins';
+
+.education {
+  padding: 85px 175px 115px;
+}
+
+.education__paragraph ul {
+  margin-bottom: 16px;
+
+  > li {
+    position: relative;
+    padding-left: 7px;
+
+    &::before {
+      content: "•";
+      margin-right: 5px;
+    }
+  }
+}
+
+.education div > p:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+@include extraLargeDesktop {
+  .education {
+    padding: 105px 0 115px;
+  }
+}
+
+@include smallDesktop {
+  .education {
+    padding: 65px 65px 75px;
+  }
+}
+
+@include tablet {
+  .education {
+    padding: 45px 30px 70px;
+  }
+}
+
+@include phone {
+  .education {
+    padding: 32px 16px 45px;
+  }
+}

@@ -1,0 +1,24 @@
+@import '../utils/mixins';
+
+.nursing__paragraph {
+  text-align: center;
+}
+
+.nursing__forms ul {
+  margin-bottom: 16px;
+
+  > li {
+    position: relative;
+    padding-left: 7px;
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      content: "•";
+      margin-right: 5px;
+    }
+  }
+}

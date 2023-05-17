@@ -1,0 +1,142 @@
+@import '../../utils/variables/variables';
+@import '../../utils/mixins';
+
+.pharm__description-paragraph {
+  text-align: center;
+  padding: 85px 90px;
+
+  p {
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.pharm__services {
+  background-color: $transparent-blue;
+}
+
+.pharm__group {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+  padding: 85px 100px 105px;
+}
+
+.pharm__group__paragraph {
+  max-width: 460px;
+}
+
+.pharm__group {
+  &.page__wrapper {
+    max-width: 1050px;
+  }
+
+  img {
+    max-width: 500px;
+  }
+}
+
+@include extraLargeDesktop {
+  .pharm__description-paragraph, .pharm__group {
+    padding: 85px 75px 95px;
+  }
+
+  .pharm__group__paragraph {
+    max-width: 560px;
+  }
+}
+
+@include smallDesktop {
+  .pharm__group {
+    padding: 64px 48px 70px;
+  }
+
+  .pharm__group__paragraph {
+    text-align: center;
+  }
+
+  .pharm__group img {
+    margin-bottom: 25px;
+  }
+}
+
+@include tablet {
+  .pharm__description-paragraph {
+    padding: 60px 28px 80px;
+  }
+
+  .pharm__group {
+    padding: 60px 28px 80px;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .pharm__group__paragraph {
+    text-align: center;
+  }
+
+  .pharm__group img {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+
+@include phone {
+  .pharm__description-paragraph {
+    padding: 32px 16px 45px;
+  }
+
+  .pharm__group {
+    padding: 32px 16px 45px;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .pharm__group__paragraph {
+    text-align: center;
+  }
+
+  .pharm__group img {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .pharm__group {
+    padding: 64px 48px 70px;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .pharm__group__paragraph {
+    text-align: left;
+  }
+
+  .pharm__group img {
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .pharm__group {
+    padding: 64px 48px 70px;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .pharm__group__paragraph {
+    text-align: center;
+  }
+
+  .pharm__group img {
+    margin-bottom: 25px;
+  }
+}

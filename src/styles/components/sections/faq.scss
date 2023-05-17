@@ -1,0 +1,76 @@
+@import '../../utils/mixins';
+@import '../page__components/accordion.scss';
+
+.faq {
+  padding: 45px 250px 50px;
+  text-align: center;
+
+  h2 {
+    font-size: 49px;
+    line-height: 64px;
+  }
+
+  p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 29px;
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.faq__accordion {
+  max-width: 1124px;
+  margin: 0 auto;
+  padding: 0 0 135px;
+}
+
+@include smallDesktop {
+  .faq {
+    padding: 35px 48px 85px;
+
+    h2 {
+      font-size: 42px;
+      line-height: 64px;
+    }
+  }
+
+  .faq__accordion {
+    padding: 0 30px 92px;
+  }
+}
+
+@include tablet {
+  .faq {
+    padding: 25px 30px 35px;
+  }
+
+  .faq__accordion {
+    padding: 0 21px 95px;
+  }
+}
+
+@include phone {
+  .faq {
+    padding: 25px 16px 35px;
+
+    h2 {
+      font-size: 40px;
+      line-height: 58px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+
+  .faq__accordion {
+    padding: 0 18px 45px;
+  }
+}
+
+

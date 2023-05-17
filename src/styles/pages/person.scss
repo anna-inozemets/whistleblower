@@ -1,0 +1,177 @@
+@import '../utils/mixins';
+
+.person {
+  padding: 50px 100px 165px;
+}
+
+.person__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.preson__short-info {
+  margin-right: 60px;
+
+  h2 {
+    display: none;
+  }
+
+  img {
+    margin-top: 7px;
+    margin-bottom: 12px;
+    min-width: 340px;
+    max-width: 100%;
+  }
+}
+
+.person__paragraph {
+  margin-bottom: 18px;
+
+  h3 {
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 21px;
+    margin-bottom: 3px;
+  }
+
+  p {
+    font-size: 17px;
+    line-height: 20px;
+  }
+}
+
+.person__main-info {
+  h2 {
+    font-size: 49px;
+    line-height: 64px;
+    font-feature-settings: "calt" off;
+    margin-bottom: 25px;
+  }
+
+  p {
+    margin-bottom: 18px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@include extraLargeDesktop {
+  .person {
+    padding: 50px 60px 165px;
+  }
+}
+
+@include smallDesktop {
+  .person {
+    padding: 65px 28px 115px;
+  }
+
+  .preson__short-info {
+    margin-right: 28px;
+
+    img {
+      margin-top: 0;
+    }
+  }
+
+  .person__paragraph {
+    margin-bottom: 16px;
+  }
+
+  .person__main-info {
+    h2 {
+      font-size: 32px;
+      line-height: 49px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 16px;
+    }
+  }
+}
+
+@include tablet {
+  .person {
+    padding: 15px 25px 100px;
+  }
+
+  .person__info {
+    flex-direction: column;
+  }
+
+  .preson__short-info {
+    margin-right: 0;
+
+    h2 {
+      display: block;
+    }
+
+    img {
+      margin-top: 0;
+      width: 100%;
+    }
+  }
+
+  .person__paragraph {
+    margin-bottom: 24px;
+
+    &:last-child {
+      margin-bottom: 65px;
+    }
+  }
+
+  .person__main-info h2 {
+    display: none;
+  }
+}
+
+@include phone {
+  .person {
+    padding: 32px 16px 45px;
+  }
+
+  .person__info {
+    flex-direction: column;
+  }
+
+  .preson__short-info {
+    margin-right: 0;
+
+    h2 {
+      display: block;
+    }
+
+    img {
+      margin-top: 0;
+      width: 100%;
+    }
+  }
+
+  .person__paragraph {
+    margin-bottom: 24px;
+
+    &:last-child {
+      margin-bottom: 40px;
+    }
+  }
+
+  .person__info h2 {
+    font-size: 28px;
+    line-height: 38px;
+    margin-bottom: 10px;
+  }
+
+  .person__main-info {
+    p {
+      margin-bottom: 16px;
+    }
+
+    h2 {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,112 @@
+@import '../../utils/variables/variables';
+@import '../../utils/mixins';
+
+.law__color {
+  background-color: $transparent-blue;
+}
+
+.law {
+  @include flexbox-center-space-between;
+  padding: 135px 0 175px 0;
+
+  img {
+    height: 470px;
+  }
+}
+
+.law__description {
+  max-width: 560px;
+
+  h2 {
+    margin-bottom: 15px;
+    font-size: 49px;
+    line-height: 64px;
+    font-feature-settings: "calt" off;
+  }
+
+  p {
+    margin-bottom: 30px;
+
+    &:last-of-type {
+      margin-bottom: 35px;
+    }
+  }
+}
+
+@include extraLargeDesktop {
+  .law {
+    padding: 135px 0 175px 0;
+  }
+}
+
+@include smallDesktop {
+  .law {
+    flex-direction: column;
+    padding: 125px 75px 105px;
+
+    img {
+      height: 550px;
+    }
+  }
+
+  .law__description {
+    margin-top: 40px;
+    max-width: max-content;
+    text-align: center;
+
+    h2 {
+      font-size: 40px;
+    }
+
+    p {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@include tablet {
+  .law {
+    flex-direction: column;
+    padding: 110px 60px 95px;
+
+    img {
+      height: 445px;
+    }
+  }
+
+  .law__description {
+    margin-top: 60px;
+
+    h2 {
+      font-size: 30px;
+    }
+
+    p {
+      margin-bottom: 35px;
+    }
+  }
+}
+
+@include phone {
+  .law {
+    padding: 32px 16px 45px;
+
+    img {
+      height: 250px;
+    }
+  }
+
+  .law__description {
+    margin-top: 16px;
+
+    h2 {
+      font-size: 30px;
+    }
+
+    p {
+      font-size: 12px;
+      line-height: 20px;
+      margin-bottom: 8px;
+    }
+  }
+}

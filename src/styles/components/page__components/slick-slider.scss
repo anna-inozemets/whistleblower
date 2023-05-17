@@ -1,0 +1,15 @@
+.slick-track {
+  display: flex;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-arrow {
+  font-size: 0;
+}
+
+.slick-next:before, .slick-prev:before {
+  display: none;
+}
