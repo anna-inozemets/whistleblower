@@ -143,7 +143,7 @@
   }
 
   &:last-child {
-    max-width: 700px;
+    max-width: 650px;
     text-align: right;
   }
 }
@@ -207,6 +207,10 @@
   }
 
   .contacts__col {
+    &:first-child {
+      margin-right: 0;
+    }
+
     p {
       text-align: center;
     }
@@ -287,6 +291,7 @@
     form {
       margin: 0 auto;
       width: 306px;
+      max-width: 100%;
       margin-bottom: 36px;
     }
 
@@ -352,7 +357,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    width: 306px;
+    max-width: 100%;
+    margin: 0 auto 24px;
 
     a {
       margin-right: 0;
@@ -360,7 +367,7 @@
   }
 }
 
-@media (max-width: 1439px) {
+@media (max-width: 1224px) {
   .contacts__col:last-child {
     text-align: center;
   }

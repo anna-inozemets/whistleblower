@@ -9,6 +9,7 @@
 
   &__description {
     @include flexbox-center-space-between;
+    gap: 10px;
     margin-bottom: 70px;
   }
 

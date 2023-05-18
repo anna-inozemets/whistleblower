@@ -4,7 +4,7 @@
 .about {
   position: relative;
   @include flexbox-center-space-between;
-  padding: 135px 0 175px 0;
+  padding: 135px 20px 175px 20px;
 }
 
 .about__description {
@@ -81,8 +81,8 @@
 
     p {
       margin-bottom: 40px;
-      padding-left: 75px;
-      padding-right: 75px;
+      padding-left: 10px;
+      padding-right: 10px;
     }
   }
 
@@ -111,8 +111,8 @@
 
     p {
       margin-bottom: 70px;
-      padding-left: 60px;
-      padding-right: 60px;
+      padding-left: 25px;
+      padding-right: 25px;
     }
   }
 
@@ -142,6 +142,8 @@
       font-size: 12px;
       line-height: 20px;
       margin-bottom: 32px;
+      padding-left: 16px;
+      padding-right: 16px;
     }
   }
 

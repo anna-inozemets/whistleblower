@@ -122,10 +122,13 @@
     }
 
   &__cards {
-    margin: 0 auto 55px;
+    margin: 0 0 55px;
     grid-template-columns: repeat(2, 351px);
     column-gap: 55px;
     row-gap: 37px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   &__card {
@@ -190,6 +193,9 @@
       margin: 0 auto 40px;
       grid-template-columns: repeat(1, 430px);
       row-gap: 20px;
+      position: static;
+      // left: 50%;
+      transform: translateX(0);
     }
 
     &__card {

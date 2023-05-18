@@ -27,7 +27,8 @@
 
     img {
       width: auto;
-      height: 640px;
+      // height: 640px;
+      object-fit: contain;
       margin-bottom: 30px;
     }
   }
@@ -38,7 +39,9 @@
     padding: 25px 28px 52px;
 
     img {
-      height: 495px;
+      max-height: 495px;
+      width: auto;
+      max-width: 100%;
       margin-bottom: 70px;
     }
   }
@@ -50,11 +53,13 @@
 
     img {
       margin-bottom: 60px;
+      height: auto;
+      width: 100%;
     }
   }
 }
 
-@media (max-width: 1439px) {
+@media (max-width: 1224px) {
   .about--page img {
     padding-left: 0;
   }
