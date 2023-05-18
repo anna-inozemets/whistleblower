@@ -44,7 +44,7 @@ const scss = () => {
   return src(paths.scss.src)
     .pipe(sass())
     .pipe(autoprefixer())
-    .pipe(concat(paths.scss.output))
+    // .pipe(concat(paths.scss.output))
     .pipe(dest(paths.scss.dest))
     .pipe(browserSync.stream());
 };
